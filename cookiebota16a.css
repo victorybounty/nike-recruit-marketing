@@ -1,0 +1,49 @@
+/* cookiebot nav tab + boxes */
+#CybotCookiebotDialogBodyFieldsetInnerContainer>div:nth-child(2),
+#CybotCookiebotDialogBodyFieldsetInnerContainer>div:last-child,
+#CybotCookiebotDialogNavList>li:last-child,
+#CybotCookiebotDialogDetailBodyContentCookieContainerTypes>li:nth-child(2),
+#CybotCookiebotDialogDetailBodyContentCookieContainerTypes>li:nth-child(4),
+#CybotCookiebotDialogDetailBodyContentCookieContainerTypes>li:last-child,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection,
+#CybotCookiebotDialogDetailFooter
+
+/* #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll */
+/* #CookiebotWidget .CookiebotWidget-body [data-consent="preferences"], */
+/* #CookiebotWidget .CookiebotWidget-body [data-consent="marketing"] */
+    {
+    display: none !important
+}
+
+@media screen and (min-width: 601px) {
+    #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper {
+        width: 50%;
+    }
+}
+
+body #CybotCookiebotDialog form input[type=checkbox][disabled]:checked+.CybotCookiebotDialogBodyLevelButtonSlider {
+    background-color: #ff66024d;
+    pointer-events: none;
+}
+
+#CybotCookiebotDialog button:before,
+#CybotCookiebotDialog #CybotCookiebotDialogTabContent .CybotCookiebotDialogDetailBulkConsentCount,
+#CybotCookiebotDialog .CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer {
+    display: none;
+}
+
+
+
+body #CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieContainerButton,
+body #CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieContainerButton:hover {
+    color: initial;
+    cursor: auto !important;
+}
+
+body #CybotCookiebotDialog label:not([for=CybotCookiebotDialogBodyLevelButtonNecessary]) {
+    cursor: auto;
+}
+
+#CybotCookiebotDialog .CybotCookiebotScrollContainer {
+    border-bottom: 0px !important;
+}
